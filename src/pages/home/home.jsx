@@ -34,7 +34,7 @@ export default function Home() {
   };
 
   // Loading
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p className="text-center p-1 mt-5">Loading...</p>;
 
   // 🔍 Search
   const handleSearch = () => {
