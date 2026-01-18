@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  /* Primary Theme */
+  --primary-color: #2563EB;
+  --primary-dark: #1E40AF;
+  --primary-light: #EFF6FF;
+
+  /* Background */
+  --bg-main: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --bg-table-header: #F1F5F9;
+  --bg-row-hover: #EFF6FF;
+
+  /* Text */
+  --text-primary: #1F2933;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+  --text-white: #FFFFFF;
+
+  /* Border */
+  --border-color: #E5E7EB;
+  --border-input: #CBD5E1;
+
+  /* Buttons */
+  --btn-add: #2563EB;
+  --btn-show: #16A34A;
+  --btn-edit: #F59E0B;
+  --btn-delete: #DC2626;
+
+  /* Status */
+  --success-color: #16A34A;
+  --warning-color: #F59E0B;
+  --danger-color: #DC2626;
+
+  /* Modal */
+  --modal-overlay: rgba(0, 0, 0, 0.5);
+  --modal-bg: #FFFFFF;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+}
+
+.text-primary{
+    color: var(--text-primary)!important;
+}
+.text-secondary{
+    color: var(--text-secondary)!important;
+}
+.text-muted{
+    color: var(--text-muted)!important;
+}
+.bg-white{
+    background-color: var(--bg-white)!important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 1rem;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.75rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+h5{
+    font-size: 1.25rem;
+}
+h6{
+    font-size: 1rem;
+}
+p{
+    font-size: 1rem;
+}
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* button styles */
+button {
+  font-family: inherit;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: opacity 0.2s ease;
+  border-radius: 6px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.btn-add {
+  background: var(--btn-add)!important;
+  color: var(--text-white)!important;
+}
+
+.btn-show {
+  background: var(--btn-show)!important;
+  color: var(--text-white);
+}
+
+.btn-edit {
+  background: var(--btn-edit);
+  color: var(--text-white);
+}
+
+.btn-delete {
+  background: var(--btn-delete);
+  color: var(--text-white);
+}
+
+.gradient {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 50%, #764ba2 100%)!important;
+  -webkit-background-clip: text!important;
+  background-clip: text!important;
+  -webkit-text-fill-color: transparent!important;
+  color: transparent!important;
+}
+
+
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.25rem;
+    }
+    h5{
+        font-size: 1.125rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.875rem;
+    }
+}
