@@ -1,16 +1,31 @@
-# React + Vite
+# Assignment : 05
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Name:** Md. Saiful Islam  
+**Email:** saiful01741899@gmail.com  
+**Live URL:** [https://assignmenttestdev.netlify.app/](https://assignmenttestdev.netlify.app/)
 
-Currently, two official plugins are available:
+### Project Description
+This is a complete Contact Management Application built using **React JS**.  
+The app uses **Context API** for global state management and **json-server** for backend simulation during development.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> ⚠️ **Note:** The `json-server` backend is **not running** on the live Netlify deployment, because Netlify only hosts static sites.  
+> All API calls in the live version are therefore non-functional. To fully use the CRUD functionality, run the project locally with `json-server`.
 
-## React Compiler
+#### Features:
+- Display all contacts in a table on the Home page
+- Add new contact using a separate page
+- Show contact details in a modal
+- Edit contact information in a modal
+- Delete contact with confirmation
+- Search contacts by first name, last name, email, or phone
+- Filter contacts by First Name (A → Z), Last Name (A → Z), or Oldest to Newest
+- Responsive design using Bootstrap and custom CSS
+- Display "No Contact Information" when no data is found
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+#### Technologies Used:
+- React JS
+- Context API (for global state management)
+- json-server (for backend API simulation in local development)
+- Bootstrap 5
+- CSS / Flexbox
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
