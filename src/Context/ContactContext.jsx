@@ -7,7 +7,7 @@ export const ContactProvider = ({ children }) => {
   const [contacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const apiUrl = "http://localhost:5000/contacts";
+  const apiUrl = "https://server-assingment-5.onrender.com/contacts";
 
   // Fetch contacts
   const fetchContacts = async () => {
@@ -71,3 +71,5 @@ export const ContactProvider = ({ children }) => {
     </ContactContext.Provider>
   );
 };
+
+export default ContactProvider;
