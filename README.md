@@ -2,14 +2,12 @@
 
 **Name:** Md. Saiful Islam  
 **Email:** saiful01741899@gmail.com  
-**Live URL:** [https://assignmenttestdev.netlify.app/](https://assignmenttestdev.netlify.app/)
+**Live URL:** [https://assignmenttestdev.netlify.app/](https://assignmenttestdev.netlify.app/)  
+**Backend Repository:** [https://github.com/mdsaifulisl/server_assingment_5](https://github.com/mdsaifulisl/server_assingment_5)
 
 ### Project Description
 This is a complete Contact Management Application built using **React JS**.  
-The app uses **Context API** for global state management and **json-server** for backend simulation during development.  
-
-> ⚠️ **Note:** The `json-server` backend is **not running** on the live Netlify deployment, because Netlify only hosts static sites.  
-> All API calls in the live version are therefore non-functional. To fully use the CRUD functionality, run the project locally with `json-server`.
+The app uses **Context API** for global state management and a custom **Express.js backend** for persistent storage and full CRUD functionality.
 
 #### Features:
 - Display all contacts in a table on the Home page
@@ -21,11 +19,20 @@ The app uses **Context API** for global state management and **json-server** for
 - Filter contacts by First Name (A → Z), Last Name (A → Z), or Oldest to Newest
 - Responsive design using Bootstrap and custom CSS
 - Display "No Contact Information" when no data is found
+- Fully functional backend with persistent storage for add, edit, and delete
 
 #### Technologies Used:
 - React JS
 - Context API (for global state management)
-- json-server (for backend API simulation in local development)
+- Express.js (for backend API)
+- Node.js & npm
 - Bootstrap 5
 - CSS / Flexbox
+- CORS for cross-origin requests
+
+### Backend API Endpoints
+- `GET /contacts` – Fetch all contacts
+- `POST /contacts` – Add a new contact
+- `PUT /contacts/:id` – Update an existing contact
+- `DELETE /contacts/:id` – Delete a contact
 
